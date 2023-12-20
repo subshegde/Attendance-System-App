@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/lightpurple"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/home">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="100dp"
+        android:layout_centerVertical="true"
+        android:fontFamily="serif"
+        android:text="Attendance System"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+</RelativeLayout>

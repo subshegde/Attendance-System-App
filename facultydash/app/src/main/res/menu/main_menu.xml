@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home">
+            <menu>
+
+                <item
+                    android:id="@+id/nav_take_attendance"
+                    android:icon="@drawable/book_alt"
+                    android:title="Take Attendance" />
+                <item
+                    android:id="@+id/nav_myclass"
+                    android:icon="@drawable/box"
+                    android:title="My Class" />
+                <item
+                    android:id="@+id/nav_studentlist"
+                    android:icon="@drawable/baseline_student_list"
+                    android:title="Student List" />
+                <item
+                    android:id="@+id/nav_absentstudent"
+                    android:icon="@drawable/baseline_student"
+                    android:title="Absent Student" />
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Others">
+            <menu>
+
+                <item
+                    android:id="@+id/nav_sendMail"
+                    android:icon="@drawable/baseline_send_mail"
+                    android:title="Send Mail" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/baseline_logout"
+                    android:title="Logout" />
+            </menu>
+        </item>
+    </group>
+</menu>

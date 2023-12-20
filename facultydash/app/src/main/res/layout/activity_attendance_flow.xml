@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/black"
+    tools:context=".SubMainActivity">
+
+
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="ATTENDANCE FLOW %"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <!--    <Button-->
+<!--        android:id="@+id/showValuesButton"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textAlignment="textStart"-->
+<!--        android:drawableRight="@drawable/right"-->
+<!--        android:text="SUBJECT"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />-->
+
+
+
+<!--    <Button-->
+<!--        android:id="@+id/showValuesButton2"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textAlignment="textStart"-->
+<!--        android:drawableRight="@drawable/right"-->
+<!--        android:text="TIME INTERVAL"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/cardContainer"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/cardContainer2"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="90dp"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/showValuesButton2"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+    <!-- Footer with three ImageButtons -->
+
+    <TextView
+        android:id="@+id/textView122"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:text="  Select Subject : "
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094"
+        tools:ignore="MissingConstraints">
+
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/spn1"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105"
+        tools:ignore="MissingConstraints">
+
+    </Spinner>
+
+    <RelativeLayout
+        android:id="@+id/barch"
+        android:layout_width="343dp"
+        android:layout_height="450dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.718"
+        tools:ignore="MissingConstraints">
+
+
+        <Button
+            android:id="@+id/your_button_id"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="80dp"
+            android:backgroundTint="@color/darkgreen"
+            android:background="@drawable/sub_rectangle_buttongreen"
+            android:layout_marginTop="0dp" />
+
+        <Button
+            android:id="@+id/your_button_id1"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:backgroundTint="@color/red"
+            android:background="@drawable/sub_rectangle_button_red"
+            android:layout_marginLeft="180dp" />
+
+        <RelativeLayout
+            android:id="@+id/line0"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="410dp"
+            android:background="@color/white">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:background="@color/white">
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView115"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:text="Present"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.99"
+        tools:ignore="MissingConstraints">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/t000"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:text="Present"
+        android:background="@color/darkgreen"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.944"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:text="Absent"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.624"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.991"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/t0000"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:text="Present"
+        android:background="@color/red"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.954"
+        tools:ignore="MissingConstraints"></TextView>
+
+
+    <!--    <RelativeLayout-->
+<!--        android:id="@+id/footerLayout"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent">-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/imageButton4"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginLeft="75dp"-->
+<!--            android:background="@drawable/layoutbookround"-->
+<!--            android:contentDescription="image description"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:srcCompat="@drawable/book_alt" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/imageButton5"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:background="@drawable/layoutboxround"-->
+<!--            android:contentDescription="image description"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/imageButton4"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:srcCompat="@drawable/box" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/imageButton6"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginLeft="236dp"-->
+<!--            android:background="@drawable/layoutcheck1round"-->
+<!--            android:contentDescription="image for check"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/imageButton5"-->
+<!--            app:srcCompat="@drawable/check" />-->
+
+<!--    </RelativeLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

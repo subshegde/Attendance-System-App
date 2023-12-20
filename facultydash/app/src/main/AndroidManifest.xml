@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Giving internet access to get data from firebase database -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/home"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/home"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Facultdash"
+        tools:targetApi="31">
+        <activity
+            android:name=".SubAbsentProfile"
+            android:exported="false" />
+        <activity
+            android:name=".SubStudentProfile2"
+            android:exported="false" />
+        <activity
+            android:name=".SubSendMail"
+            android:exported="false" />
+        <activity
+            android:name=".StudentFacultyView"
+            android:exported="false" />
+        <activity
+            android:name=".FacultyList"
+            android:exported="false" />
+        <activity
+            android:name=".SubStudentProfileInStudentDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".SubPerticularStudentProfile"
+            android:exported="false" />
+        <activity
+            android:name=".SubStudentDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".SubStudentProfile"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".SubMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyClass"
+            android:exported="false" />
+        <activity
+            android:name=".SendMail"
+            android:exported="false" />
+        <activity
+            android:name=".StudentList"
+            android:exported="false" />
+        <activity
+            android:name=".AttendanceFlow"
+            android:exported="false" />
+        <activity
+            android:name=".AbsentStudent"
+            android:exported="false" />
+        <activity
+            android:name=".FacultyProfile"
+            android:exported="false" />
+        <activity
+            android:name=".FacultyProfileEdit"
+            android:exported="false" />
+        <activity
+            android:name=".TakeAttendance"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

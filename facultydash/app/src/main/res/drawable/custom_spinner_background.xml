@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#ECECEC" /> <!-- Background color -->
+            <corners android:radius="8dp" /> <!-- Rounded corners -->
+        </shape>
+    </item>
+    <item android:right="16dp">
+        <bitmap android:src="@drawable/angle_small_down"
+        android:tint="#333333"
+        android:gravity="center" />
+    </item>
+</layer-list>

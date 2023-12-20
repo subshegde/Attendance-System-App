@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".SubMainActivity">
+
+    <!-- The content view that will be placed below the DrawerLayout -->
+        <!-- Your existing content -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+
+        <ImageButton
+            android:id="@+id/imgBtn_menuIcon"
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/baseline_dehaze" />
+
+
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Home"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black" />
+
+
+        <RelativeLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="340dp"
+            android:background="@drawable/facultpicbackground"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/boy3" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="412dp"
+            android:layout_height="144dp"
+            android:layout_marginTop="150dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-3dp"
+            tools:layout_editor_absoluteY="120dp">
+
+
+            <FrameLayout
+                android:id="@+id/frm_attendance_flow1"
+                android:layout_width="314dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="1dp"
+                android:alpha="0.5"
+                android:background="@drawable/logout">
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:alpha=".9"
+                android:background="@drawable/shadow">
+
+            </LinearLayout>
+
+
+
+
+            <FrameLayout
+                android:id="@+id/frm_attendance_flow"
+                android:layout_width="326dp"
+                android:layout_height="117dp"
+                android:layout_centerInParent="true">
+
+
+
+                <Button
+                    android:id="@+id/btnprogress"
+                    android:layout_width="match_parent"
+                    android:layout_height="122dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/daily_progress_button"
+                    android:contentDescription="Daily progress"
+                    android:text=""
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    tools:layout_editor_absoluteX="56dp"
+                    tools:layout_editor_absoluteY="16dp"></Button>
+
+
+                <TextView
+                    android:id="@+id/txt_attendanceflow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="35dp"
+                    android:padding="5dp"
+                    android:text="FACULTY DASHBOARD"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="414dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="295dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-5dp"
+            tools:layout_editor_absoluteY="278dp">
+
+
+            <TextView
+                android:id="@+id/textview5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="CATEGORIES"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:contentDescription="Description of icon">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="408dp"
+            android:layout_height="302dp"
+            android:layout_marginTop="350dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="336dp">
+
+
+            <FrameLayout
+                android:id="@+id/frame1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="160dp"
+                android:layout_marginLeft="213dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/daily_progress_button"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="213dp"
+                tools:layout_editor_absoluteY="166dp">
+
+                <TextView
+                    android:id="@+id/text_absentstudent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="59dp"
+                    android:text="Absent Student"
+                    android:textColor="@color/white"></TextView>
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="80dp"
+                    android:layout_height="4dp"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="100"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="90dp"
+                    android:id="@+id/prgbarblue"
+                    android:progressDrawable="@drawable/green_progress_bar" />
+
+
+                <ImageButton
+                    android:id="@+id/imageButton7"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/layoutgreenboxround"
+                    android:contentDescription="Description"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/user_24_copy"
+                    tools:ignore="NotSibling" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame3"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="213dp"
+                android:background="@drawable/daily_progress_button"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="214dp"
+                tools:layout_editor_absoluteY="28dp">
+
+
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="28dp"
+                    android:background="@drawable/layoutboxround"
+                    android:contentDescription="Description"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/myclass" />
+
+                <TextView
+                    android:id="@+id/text_myclass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="57dp"
+                    android:text="My Class"
+                    android:textColor="@color/white"></TextView>
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="80dp"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="100dp"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="100"
+                    android:id="@+id/progress_myclass"
+                    android:progressDrawable="@drawable/yellow_progress_bar" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame4"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="63dp"
+                android:background="@drawable/daily_progress_button"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="52dp"
+
+                tools:layout_editor_absoluteY="28dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="28dp"
+                    android:background="@drawable/layoutbookround"
+                    android:contentDescription="Description"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageButton5"
+                    app:layout_constraintHorizontal_bias="0.503"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/book_alt_copy" />
+
+                <TextView
+                    android:id="@+id/text_takeattendance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="57dp"
+                    android:text="Take    Attendence"
+                    android:textColor="@color/white"></TextView>
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="80dp"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="100dp"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="100"
+                    android:id="@+id/progress1"
+                    android:progressDrawable="@drawable/progress_bar_horizontal" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="63dp"
+                android:layout_marginTop="160dp"
+                android:background="@drawable/daily_progress_button"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="166dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/layoutcheck1round"
+                    android:contentDescription="Description"
+                    app:srcCompat="@drawable/check_copy"
+                    tools:ignore="NotSibling" />
+
+                <TextView
+                    android:id="@+id/text_studentList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="59dp"
+                    android:text="Student List"
+                    android:textColor="@color/white"></TextView>
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="80dp"
+                    android:layout_height="4dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="90dp"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="100"
+                    android:id="@+id/progressbar_studentList"
+                    android:progressDrawable="@drawable/purple_progress_bar" />
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="414dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="658dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="648dp">
+
+            <Button
+                android:id="@+id/logoutbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/logout"
+                android:text="LOGOUT"
+                android:textColor="@color/black" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!-- The NavigationView is your side navigation menu -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/headerlayout"
+        app:menu="@menu/main_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="@drawable/listroundcor"
+    android:layout_marginTop="8dp">
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/boarder"
+        android:src="@drawable/boy1"
+        android:layout_gravity="start"
+        />
+
+    <TextView
+        android:id="@+id/studentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="20dp"
+        android:text="Student Name"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_weight="1"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="end|center_vertical"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@drawable/baseline_chevron_right_24"
+        android:drawableTint="@color/white"
+        android:textSize="20sp"
+        android:layout_marginRight="20dp"
+        />
+
+</LinearLayout>
